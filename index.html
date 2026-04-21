@@ -3,10 +3,242 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="0; url=https://prism-marsupial-f77.notion.site/Welcome-to-my-website-177936015e958023ba63eca65a3ee65e?pvs=4">
-    <title>Redirecting...</title>
+    <title>Mohammadjavad Maheronnaghsh | Portfolio</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <p>If you are not redirected automatically, <a href="https://prism-marsupial-f77.notion.site/Welcome-to-my-website-177936015e958023ba63eca65a3ee65e?pvs=4">click here</a>.</p>
+    <div class="background-orbs"></div>
+
+    <nav class="navbar">
+        <a href="#home" class="logo">MJM</a>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+        </ul>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero fade-in">
+            <div class="hero-content">
+                <span class="badge">M.A.Sc Researcher @ UofT</span>
+                <h1>Mohammadjavad (Mohammad) <br><span class="accent-text">Maheronnaghsh</span></h1>
+                <p class="subtitle">Machine Learning • Deep Learning • Computer Vision • DL Acceleration</p>
+                <div class="contact-info">
+                    <a href="mailto:mj.maheronnaghsh@mail.utoronto.ca"><i class="fas fa-envelope"></i> mj.maheronnaghsh@mail.utoronto.ca</a>
+                    <a href="mailto:m.j.maheronnaghsh@gmail.com"><i class="fas fa-envelope"></i> m.j.maheronnaghsh@gmail.com</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://scholar.google.ca/citations?user=imjOYOkAAAAJ&hl=en" class="btn btn-outline" title="Google Scholar" target="_blank"><i class="fas fa-graduation-cap"></i> Scholar</a>
+                    <a href="https://www.researchgate.net/profile/Mohammad-Javad-Maheronnaghsh" class="btn btn-outline" title="ResearchGate" target="_blank"><i class="fab fa-researchgate"></i> ResearchGate</a>
+                    <a href="https://www.youtube.com/@MohammadJavadMaheronnaghsh2" class="btn btn-outline" title="YouTube" target="_blank"><i class="fab fa-youtube"></i> YouTube</a>
+                    <a href="https://www.linkedin.com/in/mj-maheronnaghsh/" class="btn btn-outline" title="LinkedIn" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    <a href="https://github.com/mjmaher987" class="btn btn-outline" title="GitHub" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About & Education Section -->
+        <section id="about" class="fade-in">
+            <div class="about-me" style="margin-bottom: 4rem;">
+                <h2 class="section-title">About Me</h2>
+                <div class="glass-card">
+                    <p style="font-size: 1.1rem; margin-bottom: 1.5rem; font-style: italic; color: var(--secondary-accent);">
+                        "Good judgment comes from experience, and a lot of that comes from bad judgment." — Will Rogers
+                    </p>
+                    <p style="margin-bottom: 1rem;">
+                        I am currently a student at the University of Toronto, heavily focused on deep learning acceleration (both inference and training phases). My recent research explores efficient augmented reality systems.
+                    </p>
+                    <p>
+                        <strong>Personality:</strong> Ambivert (میانگرا) <br>
+                        <strong>Hobbies & Interests:</strong> Cinema, soccer (playing and watching), reading books, psychology, historical & psychological podcasts, and boardgames. <br>
+                        <strong>Music:</strong> Mehran Modiri and Mohsen Chavoshi.
+                    </p>
+                    <p style="margin-top: 1rem; font-size: 0.95rem; color: var(--text-muted);">
+                        * TOEFL scores, transcripts, and certifications are available upon request.
+                    </p>
+                </div>
+            </div>
+
+            <h2 class="section-title">Education</h2>
+            <div class="grid cards-container">
+                <div class="glass-card">
+                    <div class="card-header">
+                        <h3>M.A.Sc. in Electrical and Computer Engineering</h3>
+                    </div>
+                    <p class="university"><a href="https://www.utoronto.ca/" target="_blank" style="color: var(--secondary-accent); text-decoration: none;">University of Toronto</a></p>
+                    <p class="thesis"><strong>Thesis:</strong> Efficient Image Predistortion for Augmented Reality Systems</p>
+                    <p><strong>GPA:</strong> 3.8/4</p>
+                    <p><strong>Supervisor:</strong> Prof. Andreas Moshovos (In collaboration with Meta)</p>
+                </div>
+
+                <div class="glass-card">
+                    <div class="card-header">
+                        <h3>B.Sc. in Computing Engineering</h3>
+                        <span class="date">Nov 2020 - Jun 2024</span>
+                    </div>
+                    <p class="university"><a href="https://en.sharif.edu/" target="_blank" style="color: var(--secondary-accent); text-decoration: none;">Sharif University of Technology</a></p>
+                    <p class="thesis"><strong>Thesis:</strong> Mitigating Spurious Correlation in Classification of Images</p>
+                    <p><strong>GPA:</strong> 19/20</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Publications Section -->
+        <section id="publications" class="fade-in">
+            <h2 class="section-title">Featured Publications</h2>
+            <div class="grid pub-grid">
+                <div class="glass-card pub-card">
+                    <span class="badge pub-badge">Submitted - ISMAR 2026</span>
+                    <h3>Spatons: Spatiotonally-Localized Building-Blocks for Efficient XR-Predistortion</h3>
+                    <p class="year">2026</p>
+                </div>
+                <div class="glass-card pub-card">
+                    <span class="badge pub-badge success">Accepted - MLSys 2026</span>
+                    <h3>SHANNONIC: Efficient Entropy-Optimal Compression for ML Workloads</h3>
+                    <p class="year">2026</p>
+                </div>
+                <div class="glass-card pub-card">
+                    <span class="badge pub-badge neutral">Preprint 2025</span>
+                    <h3><a href="https://d197for5662m48.cloudfront.net/documents/publicationstatus/255509/preprint_pdf/ee3bf34d020b51ceca44febe941cebaf.pdf" target="_blank" style="color: var(--text-main); text-decoration: none;">REEG: Reinforcement Learning-Based Energy-Efficient Gang Scheduling in Multicore Cyber-Physical Systems</a></h3>
+                    <p class="year">2025</p>
+                </div>
+                <div class="glass-card pub-card">
+                    <span class="badge pub-badge success">Published - <a href="https://www.ood-cv.org/" target="_blank" style="color: inherit; text-decoration: none;">ECCV OOD-CV</a></span>
+                    <h3><a href="https://link.springer.com/chapter/10.1007/978-3-031-91672-4_22" target="_blank" style="color: var(--text-main); text-decoration: none;">Robustness to Spurious Correlation: A Comprehensive Review</a></h3>
+                    <p class="year">2024</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="fade-in">
+            <h2 class="section-title">Professional Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <h3>Research Assistant & Teaching Assistant</h3>
+                        <p class="org"><a href="https://www.utoronto.ca/" target="_blank" style="color: inherit; text-decoration: none;">University of Toronto</a></p>
+                        <span class="date">Sep 2024 - Present</span>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <h3>Undergrad. Research Assistant</h3>
+                        <p class="org"><a href="https://www.researchgate.net/lab/Machine-Learning-Laboratory-MLL-Mahdieh-Soleymani" target="_blank" style="color: inherit; text-decoration: none;">Machine Learning Laboratory (MLL)</a> & CPSLab</p>
+                        <span class="date">May 2023 - Aug 2024</span>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <h3>Summer Intern</h3>
+                        <p class="org"><a href="https://xiao-zhang.net/student/" target="_blank" style="color: inherit; text-decoration: none;">CISPA Machine Learning Lab (Germany)</a></p>
+                        <span class="date">Jul 2023 - Dec 2023</span>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <h3>ML Intern</h3>
+                        <p class="org">Zista Gene Afarin</p>
+                        <span class="date">Jul 2023 - Sep 2023</span>
+                    </div>
+                </div>
+                <!-- ... additional items can be added, kept brief for visual flow -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <h3>Undergrad. Teaching Assistant</h3>
+                        <p class="org"><a href="https://en.sharif.edu/" target="_blank" style="color: inherit; text-decoration: none;">Sharif University of Technology</a></p>
+                        <span class="date">Feb 2022 - Jan 2024</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="fade-in">
+            <h2 class="section-title">Projects</h2>
+            <div class="grid cards-container proj-grid">
+                <div class="glass-card proj-card">
+                    <h3>Chromosome Classification</h3>
+                    <p class="desc">Computer Vision project developed at Zista-Gene Corp.</p>
+                    <div class="tags"><span class="tag">CV</span><span class="tag">Deep Learning</span></div>
+                </div>
+                <div class="glass-card proj-card">
+                    <h3><a href="https://github.com/mjmaher987/TelegramBot-Hamyar" target="_blank" style="color: inherit; text-decoration: none;">NLP Chatbot (Mental Health)</a></h3>
+                    <p class="desc">Chatomatic/Rasa Telegram-bot with fine-tuned NLP models.</p>
+                    <div class="tags"><span class="tag">NLP</span><span class="tag">ChatBots</span><span class="tag">Rasa</span></div>
+                </div>
+                <div class="glass-card proj-card">
+                    <h3><a href="https://github.com/SMSadegh19/Smart-Elevator" target="_blank" style="color: inherit; text-decoration: none;">Smart Elevator</a></h3>
+                    <p class="desc">Embedded systems project using Arduino.</p>
+                    <div class="tags"><span class="tag">Arduino</span><span class="tag">Embedded Systems</span></div>
+                </div>
+                <div class="glass-card proj-card">
+                    <h3><a href="https://github.com/mjmaher987/Flight-Management-System" target="_blank" style="color: inherit; text-decoration: none;">Airline Manager</a></h3>
+                    <p class="desc">Database and application management project.</p>
+                    <div class="tags"><span class="tag">PostgreSQL</span><span class="tag">Python</span><span class="tag">Java</span></div>
+                </div>
+                <div class="glass-card proj-card">
+                    <h3><a href="https://github.com/mjmaher987/Yu-Gi-Oh" target="_blank" style="color: inherit; text-decoration: none;">Yu-Gi-Oh Game</a></h3>
+                    <p class="desc">Advanced Programming Project using Java and JavaFX.</p>
+                    <div class="tags"><span class="tag">Java</span><span class="tag">JavaFX</span></div>
+                </div>
+                <div class="glass-card proj-card">
+                    <h3><a href="https://github.com/mjmaher987/Sentiment-Analysis-Project" target="_blank" style="color: inherit; text-decoration: none;">Sentiment Analysis</a></h3>
+                    <p class="desc">Machine Learning sentiment analysis on text data.</p>
+                    <div class="tags"><span class="tag">NLP</span><span class="tag">Machine Learning</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="fade-in">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-container glass-card">
+                <div class="skill-category">
+                    <h3>Languages</h3>
+                    <div class="skill-tags">
+                        <span>Python</span><span>R</span><span>Java</span><span>C/C++</span><span>C#</span><span>Verilog</span><span>Assembly (x86, MIPS)</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Machine Learning Tools</h3>
+                    <div class="skill-tags accent">
+                        <span>PyTorch</span><span>Tensorflow</span><span>Scikit-Learn</span><span>SciPy</span><span>Numpy</span><span>Pandas</span><span>PaddleDetection</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Other Tools</h3>
+                    <div class="skill-tags">
+                        <span>Git</span><span>PostgreSQL</span><span>Arduino</span><span>Raspberry Pi</span><span>Linux</span><span>Latex</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+ 
+
+    </main>
+
+    <footer>
+        <p>© 2026 Mohammadjavad Maheronnaghsh. Designed with <i class="fas fa-heart" style="color:var(--accent);"></i>.</p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
