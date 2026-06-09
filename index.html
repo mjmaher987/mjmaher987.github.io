@@ -91,10 +91,11 @@
                 <h1>Mohammadjavad Maheronnaghsh</h1>
                 <p class="hero-title">Machine Learning Engineer &amp; M.A.Sc. Researcher</p>
                 <p class="hero-subtitle">Efficient Deep Learning · Computer Vision · GenAI Systems</p>
+                <p class="hero-meta">Toronto, ON · Authorized to work in Canada · <span class="nowrap">PGWP-eligible</span></p>
                 <p class="hero-summary">
                     I build compact, fast, production-minded AI systems across GPU, edge, and FPGA hardware.
-                    My recent work matched state-of-the-art AR image quality with 106x fewer parameters and
-                    deployed real-time inference across five hardware targets.
+                    My recent research spans AR predistortion, lossless ML tensor compression, medical image
+                    classification, and full-stack GenAI products.
                 </p>
                 <div class="hero-actions" aria-label="Primary links">
                     <a class="btn btn-primary" href="mailto:m.j.maheronnaghsh@gmail.com">
@@ -123,23 +124,23 @@
         <section class="impact-strip section-shell" aria-label="Selected impact metrics">
             <div class="impact-item fade-in">
                 <strong>106x</strong>
-                <span>fewer parameters</span>
+                <span>fewer parameters for Spatons AR predistortion</span>
             </div>
             <div class="impact-item fade-in">
                 <strong>6x</strong>
-                <span>fewer FLOPs</span>
+                <span>fewer FLOPs versus CompenNet++ baseline</span>
             </div>
             <div class="impact-item fade-in">
                 <strong>530 FPS</strong>
-                <span>RTX 3090 inference</span>
+                <span>AR predistortion throughput on RTX 3090</span>
             </div>
             <div class="impact-item fade-in">
                 <strong>21K+</strong>
-                <span>professor records</span>
+                <span>professor profiles in Apply outreach platform</span>
             </div>
             <div class="impact-item fade-in">
                 <strong>3+ yrs</strong>
-                <span>ML experience</span>
+                <span>across research, internships, and ML products</span>
             </div>
         </section>
 
@@ -172,7 +173,7 @@
                             </div>
                             <div>
                                 <dt>Deployment</dt>
-                                <dd>RTX 3090, Jetson Orin Nano, Raspberry Pi 5, Zynq FPGA</dd>
+                                <dd>RTX 3090, Arduino, Raspberry Pi 5, Zynq FPGA</dd>
                             </div>
                         </dl>
                         <div class="tags">
@@ -223,18 +224,29 @@
                     <article class="work-card fade-in">
                         <div class="card-topline">
                             <span class="pill">Medical CV</span>
-                            <span>Lab deployed</span>
+                            <a href="https://github.com/mjmaher987/Zista-Gene-Afarin" target="_blank"
+                                rel="noopener noreferrer">GitHub</a>
                         </div>
                         <h3>Chromosome Classification Pipeline</h3>
                         <p>
-                            End-to-end PyTorch classification pipeline for medical chromosome imaging, including
-                            preprocessing, augmentation, model training, evaluation, and lab deployment.
+                            Summer 2023 medical image classification work: DermaMNIST warm-up followed by a
+                            chromosome classifier benchmarked across seven CNN backbones.
                         </p>
+                        <dl class="compact-results">
+                            <div>
+                                <dt>Best results</dt>
+                                <dd>ResNet34, EfficientNet_v2_s, and InceptionV3 reached about 98% top-1 accuracy.</dd>
+                            </div>
+                            <div>
+                                <dt>Pipeline</dt>
+                                <dd>Load, resize, encode labels, split data, train, evaluate, and save models.</dd>
+                            </div>
+                        </dl>
                         <div class="tags">
                             <span>PyTorch</span>
+                            <span>torchvision</span>
                             <span>Medical Imaging</span>
-                            <span>Augmentation</span>
-                            <span>Evaluation</span>
+                            <span>Transfer Learning</span>
                         </div>
                     </article>
                 </div>
@@ -242,7 +254,6 @@
                 <div class="link-panel fade-in" aria-label="Other projects">
                     <h3>Other projects</h3>
                     <div class="project-links">
-                        <a href="https://github.com/mjmaher987" target="_blank" rel="noopener noreferrer">REEG</a>
                         <a href="https://github.com/mjmaher987/Stock-Prediction-Using-ML" target="_blank"
                             rel="noopener noreferrer">Stock Prediction</a>
                         <a href="https://github.com/mjmaher987/Sentiment-Analysis-Project" target="_blank"
@@ -273,8 +284,8 @@
                         <p class="org">University of Toronto · in collaboration with Meta</p>
                         <ul>
                             <li>Built Spatons, a 10.8K-parameter AR predistortion model matching CompenNet++ quality with 106x fewer parameters.</li>
-                            <li>Engineered an O(1)-per-pixel geometric stage with about 99.99% compute reduction.</li>
-                            <li>Profiled deployment across RTX 3090, Jetson Orin Nano, Raspberry Pi 5, and Zynq FPGA targets.</li>
+                            <li>Engineered an O(1)-per-pixel geometric stage and profiled real-time deployment across RTX 3090, Arduino, Raspberry Pi 5, and Zynq FPGA targets.</li>
+                            <li>Contributed to Shannonic federated-learning experiments for efficient entropy-optimal compression of ML workloads.</li>
                         </ul>
                     </article>
 
@@ -286,8 +297,9 @@
                         <h3>Machine Learning Intern — Computer Vision</h3>
                         <p class="org">Medical chromosome imaging</p>
                         <ul>
-                            <li>Built a PyTorch classification pipeline covering preprocessing, augmentation, training, and evaluation.</li>
-                            <li>Prepared the model workflow for practical lab use by aligning data handling and evaluation steps.</li>
+                            <li>Built a PyTorch and torchvision workflow for DermaMNIST skin-lesion classification and chromosome image classification.</li>
+                            <li>Benchmarked ResNet, DenseNet, EfficientNet, GoogleNet, InceptionV3, and AlexNet transfer-learning backbones.</li>
+                            <li>Reached about 98% top-1 accuracy with ResNet34, EfficientNet_v2_s, and InceptionV3 on the chromosome task.</li>
                         </ul>
                     </article>
 
@@ -296,11 +308,11 @@
                             <span>Jul 2023 - Aug 2024</span>
                             <span>CISPA · Sharif</span>
                         </div>
-                        <h3>Research Intern — ML Robustness</h3>
+                        <h3>Research Intern — Fast Edge Machine Learning</h3>
                         <p class="org">CISPA Helmholtz Center, Germany · ML Lab, Sharif University of Technology</p>
                         <ul>
-                            <li>Surveyed 100+ out-of-distribution robustness methods for computer vision.</li>
-                            <li>Contributed to work published at the ECCV 2024 OOD-CV Workshop.</li>
+                            <li>Worked in the area of fast edge machine learning with Prof. Xiao Zhang and the Sharif ML Lab.</li>
+                            <li>Contributed to related research activity connecting efficient ML methods with resource-constrained settings.</li>
                         </ul>
                     </article>
 
@@ -335,6 +347,7 @@
                     <article class="publication-card fade-in">
                         <span class="venue accepted">MLSys 2026 · Accepted</span>
                         <h3>SHANNONIC: Efficient Entropy-Optimal Compression for ML Workloads</h3>
+                        <p>Kareem Ibrahim · Mohammadjavad Maheronnaghsh · Andreas Moshovos. Contributed to federated-learning experiments for a lossless ML tensor codec with 530B state, near-Shannon-limit efficiency, and 1.3-3.1x faster communication under bandwidth constraints.</p>
                     </article>
                     <article class="publication-card fade-in">
                         <span class="venue submitted">IISWC 2026 · Submitted</span>
@@ -372,11 +385,11 @@
                     </article>
                     <article class="skill-card fade-in">
                         <h3>GenAI &amp; LLMs</h3>
-                        <p>Agentic pipelines · Prompt engineering · LLM integration · Multimodal evaluation · OpenRouter</p>
+                        <p>Agentic pipelines · LLM integration · Multimodal evaluation · OpenRouter · Personalized generation workflows</p>
                     </article>
                     <article class="skill-card fade-in">
                         <h3>Efficient &amp; Edge ML</h3>
-                        <p>Model compression · Efficient inference · DL acceleration · Profiling · Benchmarking · Jetson · Raspberry Pi · FPGA</p>
+                        <p>Model compression · Efficient inference · DL acceleration · Profiling · Benchmarking · Arduino · Raspberry Pi · FPGA</p>
                     </article>
                     <article class="skill-card fade-in">
                         <h3>Systems &amp; MLOps</h3>
@@ -385,6 +398,10 @@
                     <article class="skill-card fade-in">
                         <h3>Research Areas</h3>
                         <p>Computer vision · Efficient deep learning · Reinforcement learning · NLP · Agentic AI · Robustness</p>
+                    </article>
+                    <article class="skill-card fade-in">
+                        <h3>Spoken Languages</h3>
+                        <p>English, professional · Persian/Farsi, native · Arabic, intermediate · French, beginner</p>
                     </article>
                 </div>
             </div>
@@ -411,7 +428,7 @@
                     <article class="education-card fade-in">
                         <div class="card-topline">
                             <span>Nov 2020 - Jun 2024</span>
-                            <span>GPA 19.37 / 20</span>
+                            <span>GPA 19 / 20</span>
                         </div>
                         <h3>B.Sc., Computer Engineering</h3>
                         <p class="org">Sharif University of Technology</p>
@@ -428,7 +445,7 @@
                     <h2>Recognition</h2>
                 </div>
                 <ul class="awards-list fade-in">
-                    <li>IMAE Graduate Scholarship, University of Toronto, 2024</li>
+                    <li>Eligible for the IMAE Graduate Scholarship, University of Waterloo, 2024</li>
                     <li>Ranked 106 out of 150,000+ nationally, 2020</li>
                     <li>National Mathematics Olympiad, Level 2, 2017-2018</li>
                 </ul>
@@ -440,7 +457,8 @@
                 <p class="eyebrow">Contact</p>
                 <h2>Open to ML engineering, research engineering, and efficient AI systems roles.</h2>
                 <p>
-                    The fastest way to reach me is email. I am based in Toronto and authorized to work in Canada.
+                    The fastest way to reach me is email.
+                    <span class="hiring-line">Toronto, ON · Authorized to work in Canada · <span class="nowrap">PGWP-eligible</span></span>
                 </p>
                 <div class="contact-actions">
                     <a class="btn btn-primary" href="mailto:m.j.maheronnaghsh@gmail.com">
