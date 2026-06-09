@@ -194,6 +194,17 @@ h3 {
     font-weight: 700;
 }
 
+.hero-meta {
+    margin: -0.35rem 0 1.15rem;
+    color: var(--accent-strong);
+    font-size: 0.95rem;
+    font-weight: 800;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
 .hero-summary {
     max-width: 680px;
     color: var(--text-muted);
@@ -429,6 +440,28 @@ h3 {
     color: var(--text-muted);
 }
 
+.compact-results {
+    display: grid;
+    gap: 0.75rem;
+    margin: 1rem 0 1.2rem;
+}
+
+.compact-results div {
+    border-top: 1px solid var(--border);
+    padding-top: 0.75rem;
+}
+
+.compact-results dt {
+    margin-bottom: 0.2rem;
+    color: var(--text-main);
+    font-weight: 900;
+}
+
+.compact-results dd {
+    margin: 0;
+    color: var(--text-muted);
+}
+
 .tags {
     display: flex;
     flex-wrap: wrap;
@@ -506,6 +539,11 @@ h3 {
     margin: 0.8rem 0 0;
 }
 
+.publication-card p {
+    margin: 0.75rem 0 0;
+    color: var(--text-muted);
+}
+
 .publication-card a {
     text-decoration: none;
 }
@@ -533,11 +571,6 @@ h3 {
 
 .skill-card {
     grid-column: span 2;
-}
-
-.skill-card:nth-child(4),
-.skill-card:nth-child(5) {
-    grid-column: span 3;
 }
 
 .skill-card p {
@@ -601,6 +634,11 @@ h3 {
 .contact-panel p {
     max-width: 680px;
     color: #c8d5d1;
+}
+
+.hiring-line {
+    display: block;
+    margin-top: 0.25rem;
 }
 
 .contact-panel .eyebrow {
