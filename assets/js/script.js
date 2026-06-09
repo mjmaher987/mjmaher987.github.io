@@ -1,71 +1,38 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // 1. Navbar scroll effect
-    const navbar = document.querySelector('.navbar');
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
-            navbar.classList.add('scrolled');
-        } else {
-            navbar.classList.remove('scrolled');
-        }
-    });
+    const navToggle = document.querySelector(".nav-toggle");
+    const navLinks = document.querySelector(".nav-links");
+    const icon = navToggle?.querySelector("i");
 
-    // 2. Intersection Observer for Fade-in effects
-    const fadeObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-                // Optional: Stop observing once visible if you only want it to animate once
-                fadeObserver.unobserve(entry.target);
-            }
+    const closeMenu = () => {
+        if (!navToggle || !navLinks) return;
+        navLinks.classList.remove("is-open");
+        document.body.classList.remove("nav-open");
+        navToggle.setAttribute("aria-expanded", "false");
+        navToggle.setAttribute("aria-label", "Open navigation");
+        icon?.classList.remove("fa-xmark");
+        icon?.classList.add("fa-bars");
+    };
+
+    if (navToggle && navLinks) {
+        navToggle.addEventListener("click", () => {
+            const isOpen = navLinks.classList.toggle("is-open");
+            document.body.classList.toggle("nav-open", isOpen);
+            navToggle.setAttribute("aria-expanded", String(isOpen));
+            navToggle.setAttribute("aria-label", isOpen ? "Close navigation" : "Open navigation");
+            icon?.classList.toggle("fa-bars", !isOpen);
+            icon?.classList.toggle("fa-xmark", isOpen);
         });
-    }, {
-        threshold: 0.1,
-        rootMargin: "0px 0px -50px 0px"
-    });
 
-    document.querySelectorAll('.fade-in').forEach(element => {
-        fadeObserver.observe(element);
-    });
-
-    // 3. Smooth Scrolling for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            const targetId = this.getAttribute('href');
-            if(targetId === '#') return;
-
-            const targetSection = document.querySelector(targetId);
-            if(targetSection) {
-                targetSection.scrollIntoView({
-                    behavior: 'smooth'
-                });
-            }
+        navLinks.querySelectorAll("a").forEach((link) => {
+            link.addEventListener("click", closeMenu);
         });
-    });
 
-    // 4. Mobile Menu Toggle 
-    // Basic implementation for a highly responsive site. In a full version, a sidebar or expanding menu would be added here.
-    const hamburger = document.querySelector('.hamburger');
-    const navLinks = document.querySelector('.nav-links');
-    
-    // (If the user wants a full mobile menu, we can expand this, but a simple toggle works perfectly for a clean approach)
-    if(hamburger) {
-        hamburger.addEventListener('click', () => {
-            // just a placeholder for potential mobile menu expansion
-            if(navLinks.style.display === 'flex') {
-                navLinks.style.display = 'none';
-            } else {
-                navLinks.style.display = 'flex';
-                // Inline styles overrides to show it as dropdown
-                navLinks.style.position = 'absolute';
-                navLinks.style.top = '100%';
-                navLinks.style.left = '0';
-                navLinks.style.width = '100%';
-                navLinks.style.background = 'rgba(7, 9, 15, 0.95)';
-                navLinks.style.flexDirection = 'column';
-                navLinks.style.padding = '2rem';
-                navLinks.style.textAlign = 'center';
-            }
+        document.addEventListener("keydown", (event) => {
+            if (event.key === "Escape") closeMenu();
         });
     }
+
+    document.querySelectorAll(".fade-in").forEach((element) => {
+        element.classList.add("visible");
+    });
 });
